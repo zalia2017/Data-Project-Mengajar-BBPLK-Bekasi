@@ -55,10 +55,15 @@ function getDataBarang() {
                     satuan = el
                 }
             });
+            //Memasukkan nilai harga ke dalam element yang memiliki id harga-barang
             document.getElementById('harga-barang').value = harga
+            //Memasukkan nilai satuan ke dalam element yang memiliki id satuan-barang
             document.getElementById('satuan-barang').value = satuan
+            //Mengaktifkan elemen jumlah-beli
             document.getElementById('jumlah-beli').disabled = false
+            //Mengisi elemen jumlah-beli dengan nilai 1
             document.getElementById('jumlah-beli').value = 1
+            //Mengaktifkan elemen submit-temp
             document.getElementById('submit-temp').disabled = false
         }
     });
